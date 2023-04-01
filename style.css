@@ -1,15 +1,9 @@
 
-
-img {
-  width: 400px;
-  height: 275px;
-}
-
-#photoSection{
-  column-width: 400px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-block: auto
+body {
+  background-color: blanchedalmond;
+  background-image: url( "https://freepngimg.com/save/22720-tree-branch-transparent/846x378");
+  background-size: cover;
+  background-repeat: no-repeat;
 ;
 }
 
@@ -20,6 +14,29 @@ h1 {
   font-family: sans-serif;
   -webkit-text-stroke-color: cornsilk;
   margin-bottom: 14px;
+}
+
+.slothHeaders {
+  font-size: 40px;
+  text-align: center;
+  padding-top: 5px;
+    font-family: sans-serif;
+    color: rgb(240, 252, 234);
+    -webkit-text-stroke-color: #203f27;
+    -webkit-text-stroke-width: .5px;
+  
+}
+
+h3 {
+  text-align: center;
+  width: 700px;
+  font-size: 23px;
+  background-color: rgba(255,255,255,77%);
+  padding: 20px;
+  font-family: sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 12px;
 }
 
 h4, h5, p {
@@ -42,23 +59,55 @@ p {
   font-size: 18px;
 }
 
-h3 {
-  text-align: center;
-  width: 700px;
-  font-size: 23px;
-  background-color: rgba(255,255,255,77%);
-  padding: 20px;
-  font-family: sans-serif;
-  margin-left: auto;
-  margin-right: auto;
+.slothPics {
+  width: 400px;
+  height: 275px;
+  border-radius: 10px;
 }
 
-body {
-  background-color: blanchedalmond;
-  background-image: url( "https://freepngimg.com/save/22720-tree-branch-transparent/846x378");
-  background-size: cover;
-  background-repeat: no-repeat;
-;
+#allSloths {
+  display: flex;
+}
+
+#threeToedSlothSection {
+  background-color: rgba(26, 83, 30,30%);
+  width: 1000px;
+  transition-duration: .3s;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  margin: 0px;
+
+}
+#threeToedSlothSection:hover {
+  background-color: rgba(26, 83, 30,70%);
+ 
+}
+
+#threeToedSlothPics{
+  column-width: 400px;
+  column-count: 2;
+  margin-right: 0px;
+  padding: 25px;
+}
+
+#twoToedSlothSection {
+  background-color: rgba(26, 83, 30,30%);
+  width: 500px;
+  transition-duration: .3s;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  margin: 0px;
+}
+#twoToedSlothSection:hover {
+  background-color: rgba(26, 83, 30,70%);
+ 
+}
+
+#twoToedSlothPics{
+  column-width: 400px;
+  column-count: 1;
+  margin-right: 0px;
+  padding: 25px;
 }
 
 .flipCard {
@@ -66,6 +115,9 @@ body {
   width: 400px;
   height: 275px;
   perspective: 500px;
+  margin-inline: auto;
+  padding-bottom: 35px;
+ ;
 }
 
 .flipCardInner {
@@ -76,6 +128,8 @@ body {
   transition: transform 1s;
   transform-style: preserve-3D;
   -webkit-column-break-inside: avoid;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .flipCard:hover .flipCardInner {
@@ -86,9 +140,10 @@ body {
   position: absolute;
   width: 400px;
   height: 275px;
-
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  margin: 0px;
+  border-radius: 10px
 }
 
 .flipCardFront {
@@ -97,7 +152,7 @@ body {
 }
 
 .flipCardBack {
-  background-color: #2980b9;
+  background-color: #203f27;
   color: white;
   transform: rotateY(180deg);
 
